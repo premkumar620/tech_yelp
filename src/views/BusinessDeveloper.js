@@ -1,16 +1,21 @@
-
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { createStackNavigator } from '@react-navigation/stack';
 
 
-import Dashboard from './src/serviceengg/Dashboard';
-import Account from './src/serviceengg/Account';
-import CompleteRequest from './src/serviceengg/CompleteRequest';
-import NewRequest from './src/serviceengg/NewRequest';
-import ProgressRequest from './src/serviceengg/ProgressRequest';
-import Login from './src/serviceengg/Login';
+
+import Dashboard from './businessdeveloper/Dashboard';
+import NewClient from './businessdeveloper/NewClient';
+import Clients from './businessdeveloper/Clients';
+import Product from './businessdeveloper/Product';
+import Login from './Login';
+// import Dashboard from './src/bd/Dashboard'; 
+// import Clients from './src/bd/Clients';
+// import Product from './src/bd/Product';
+// import NewClient from './src/bd/NewClient';
+// import Login from './src/Login'; 
+
 
 
 const Drawer = createDrawerNavigator();
@@ -21,16 +26,15 @@ function DrawerNavigator() {
   return (
     <Drawer.Navigator initialRouteName="Dashboard">
       <Drawer.Screen name="Dashboard" component={Dashboard} />
-      <Drawer.Screen name="Account" component={Account} />
-      <Drawer.Screen name="CompleteRequest" component={CompleteRequest} />
-      <Drawer.Screen name="NewRequest" component={NewRequest} />
-      <Drawer.Screen name="ProgressRequest" component={ProgressRequest} />
+      <Drawer.Screen name="NewClient" component={NewClient} />
+      <Drawer.Screen name="Clients" component={Clients} />
+      <Drawer.Screen name="Product" component={Product} />
     </Drawer.Navigator>
   );
 }
 
 // Main App
-const App = () => {
+const BusinessDeveloper = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Login">
@@ -52,4 +56,6 @@ const App = () => {
   );
 };
 
-export default App;
+export default BusinessDeveloper;
+
+

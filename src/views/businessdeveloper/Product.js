@@ -10,16 +10,16 @@ const Product = () => {
     const fetchProducts = () => {
       setTimeout(() => {
         const mockData = [
-          { id: '1', title: 'Laptop Model A', price: '$1,299.99', image: require('../../assets/Laptop.png') },
-          { id: '2', title: 'Laptop Model B', price: '$1,499.99', image: require('../../assets/Laptop.png') },
-          { id: '3', title: 'Laptop Model C', price: '$1,599.99', image: require('../../assets/Laptop.png') },
-          { id: '4', title: 'Laptop Model D', price: '$1,699.99', image: require('../../assets/Laptop.png') },
-          { id: '5', title: 'Laptop Model E', price: '$1,799.99', image: require('../../assets/Laptop.png') },
-          { id: '6', title: 'Laptop Model F', price: '$1,899.99', image: require('../../assets/Laptop.png') },
-          { id: '7', title: 'Laptop Model G', price: '$1,899.99', image: require('../../assets/Laptop.png') },
-          { id: '8', title: 'Laptop Model H', price: '$1,899.99', image: require('../../assets/Laptop.png') },
-          { id: '9', title: 'Laptop Model I', price: '$1,899.99', image: require('../../assets/Laptop.png') },
-          { id: '10', title: 'Laptop Model J', price: '$1,899.99', image: require('../../assets/Laptop.png') }
+          { id: '1', title: 'Laptop Model A', price: '$1,299.99', image: require('../../../assets/Laptop.png') },
+          { id: '2', title: 'Laptop Model B', price: '$1,499.99', image: require('../../../assets/Laptop.png') },
+          { id: '3', title: 'Laptop Model C', price: '$1,599.99', image: require('../../../assets/Laptop.png') },
+          { id: '4', title: 'Laptop Model D', price: '$1,699.99', image: require('../../../assets/Laptop.png') },
+          { id: '5', title: 'Laptop Model E', price: '$1,799.99', image: require('../../../assets/Laptop.png') },
+          { id: '6', title: 'Laptop Model F', price: '$1,899.99', image: require('../../../assets/Laptop.png') },
+          { id: '7', title: 'Laptop Model G', price: '$1,899.99', image: require('../../../assets/Laptop.png') },
+          { id: '8', title: 'Laptop Model H', price: '$1,899.99', image: require('../../../assets/Laptop.png') },
+          { id: '9', title: 'Laptop Model I', price: '$1,899.99', image: require('../../../assets/Laptop.png') },
+          { id: '10', title: 'Laptop Model J', price: '$1,899.99', image: require('../../../assets/Laptop.png') }
         ];
         setProducts(mockData);
       }, 1000); // Simulate network delay

@@ -1,13 +1,17 @@
+
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import Dashboard from './src/bd/Dashboard'; // Ensure the path and export are correct
-import Clients from './src/bd/Clients';
-import Product from './src/bd/Product';
-import NewClient from './src/bd/NewClient';
-import Login from './src/bd/Login'; // Your login screen component
+
+import Dashboard from './serviceengineer/Dashboard';
+import Account from './serviceengineer/Account';
+import CompleteRequest from './serviceengineer/CompleteRequest';
+import NewRequest from './serviceengineer/NewRequest';
+import ProgressRequest from './serviceengineer/ProgressRequest';
+import Login from './Login';
+
 
 const Drawer = createDrawerNavigator();
 const Stack = createStackNavigator();
@@ -17,9 +21,10 @@ function DrawerNavigator() {
   return (
     <Drawer.Navigator initialRouteName="Dashboard">
       <Drawer.Screen name="Dashboard" component={Dashboard} />
-      <Drawer.Screen name="NewClient" component={NewClient} />
-      <Drawer.Screen name="Clients" component={Clients} />
-      <Drawer.Screen name="Product" component={Product} />
+      <Drawer.Screen name="Account" component={Account} />
+      <Drawer.Screen name="CompleteRequest" component={CompleteRequest} />
+      <Drawer.Screen name="NewRequest" component={NewRequest} />
+      <Drawer.Screen name="ProgressRequest" component={ProgressRequest} />
     </Drawer.Navigator>
   );
 }
@@ -48,5 +53,3 @@ const App = () => {
 };
 
 export default App;
-
-
